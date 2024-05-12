@@ -14,7 +14,7 @@
     <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="ignoredIdentifiers">
         <list>
-          <option value="core.models.Article.objects" />
+          <option value="PySocks" />
         </list>
       </option>
     </inspection_tool>

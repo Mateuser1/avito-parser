@@ -13,6 +13,12 @@ class ParserProduct(Parser):
         description = self.get_description()
         link = self.url
         stars = self.get_stars()
+        print(title)
+        print(price)
+        print(photos)
+        print(characteristics)
+        print(description)
+        print(link)
         print(stars)
 
     def get_title(self):
@@ -31,6 +37,7 @@ class ParserProduct(Parser):
 
     def get_characteristics(self):
         elements = self.soup.find_all('li', {'class': 'params-paramsList__item-_2Y2O'})
+        print(elements)
         characteristics = [elements[0].text.replace("Состояние", ""),
                                elements[3].text.replace("Встроенная память: ", ""),
                                elements[5].text.replace("Состояние аккумулятора: ", "").replace('\xa0', '')]
