@@ -13,3 +13,4 @@ class Parser:
         browser = webdriver.Chrome()
         browser.get(url=self.url)
         return browser
+

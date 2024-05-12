@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 from parser import Parser
 
 
+
 class ParserProduct(Parser):
     def start(self):
         self.soup = BeautifulSoup(self.browser.page_source, 'html.parser')

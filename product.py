@@ -9,3 +9,4 @@ class Product:
         self.position = position
         self.description = description
         self.stars = stars
+
